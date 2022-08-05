@@ -8,7 +8,7 @@ def get_ip():
 
 # DEFAULT AFTER IP ACQUIRED
 def get_command_type():
-    command_type = input("[1] Keypress mode.\n[2] Search engine mode. *MUST BE ON SEARCH PAGE WITH THE 'backspace' SELECTED AS THE DEFAULT BUTTON HIGHLIGHTED*.\n[3] Device Info.\nENTER: ")
+    command_type = input("[1] Keypress mode.\n[2] Search engine mode. *MUST BE ON SEARCH PAGE WITH THE 'backspace' SELECTED AS THE DEFAULT BUTTON HIGHLIGHTED*.\n[3] Device Info.\n[Q] Quit/exit.\nENTER: ")
     return command_type
 
 def keypress_help():
