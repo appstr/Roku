@@ -1,2 +1,5 @@
 # Roku
-Roku hacks
+
+## Command: 
+### python3 roku_hack.py
+
