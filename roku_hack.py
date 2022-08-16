@@ -5,10 +5,10 @@ PORT = 8060
 
 # MAC ADRESS(ES):
 #Example: BEDROOM_MAC = "d3:0a:5e:00:53:af"
-BEDROOM_MAC = "REPLACE THIS TEXT WITH THE ROKU MAC ADDRESS FOR YOUR BEDROOM"
+BEDROOM_MAC = "28:AD:18:8E:B5:3B"
 # Comment out the code below this comment if running just 1 device. Continue commenting out lines as directed within get_ip().
 # Add another MAC address variable if using more than 2 devices. For more than 2 devices, additional code must be added within get_ip().
-LIVINGROOM_MAC = "REPLACE THIS TEXT WITH THE ROKU MAC ADDRESS FOR YOUR LIVINGROOM"
+LIVINGROOM_MAC = "8C:49:62:3C:86:18"
 
 # DEFAULT AFTER IP ACQUIRED
 def get_command_type():
@@ -18,11 +18,11 @@ def get_command_type():
 # Scanning network 192.168.0.1-10 using nmap to acquire IP's associated with the hard-coded MAC addresses.
 def get_ip():
     # Creating IP-Address storage files.
-    os.system('touch bed_room_ip.txt')
+    os.system("touch bed_room_ip.txt")
     # Comment out the code below this line if running just 1 device. For more than 2 devices, duplicate the code below and change the file name to something unique.
-    os.system('touch living_room_ip.txt')
+    os.system("touch living_room_ip.txt")
 
-    print('\nScanning your Roku devices...\n')
+    print("\nScanning your Roku devices...\n")
 
     # Change IP-Address and IP range if your network is different.
     # Scanning IP's 192.168.0.1 - 192.168.9.10
@@ -40,6 +40,8 @@ def get_ip():
     with open('living_room_ip.txt', 'r') as file:
         living_room_ip = file.read().rstrip()
 
+    print(f'BEDROOM_IP: {bed_room_ip}')
+    print(f'LIVINGROOM_IP: {living_room_ip}')
     # Add or remove file names as needed.
     os.system("rm -rf tmp.txt bed_room_ip.txt living_room_ip.txt")
     # User is given option of either the Bed Room or Living Room device. Add or remove options as needed.
@@ -97,7 +99,7 @@ def keypress_commands():
     print("User shut down 'keypress mode'.\n")
 
 # Get search input.
-get_search_input():
+def get_search_input():
     search_input = input("Enter the word or phrase you wish to search for. Type 'Q' to exit.\nEnter: ")
     return search_input
 
