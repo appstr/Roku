@@ -19,4 +19,4 @@ This script allows a user to control a Roku device that is connected to the same
 
 `[2]` Search mode allows a user to search for a string. The user must be in the search box with the "space" bar selected (within the seach box, navigate to the "space" bar and leave it "selected").
 
-`[3]` Devise information.
+`[3]` Device information.
