@@ -5,10 +5,10 @@ PORT = 8060
 
 # MAC ADRESS(ES):
 #Example: BEDROOM_MAC = "d3:0a:5e:00:53:af"
-BEDROOM_MAC = "28:AD:18:8E:B5:3B"
+BEDROOM_MAC = "ENTER-YOUR-ROKU'S-MAC-ADDRESS-FOR-BEDROOM"
 # Comment out the code below this comment if running just 1 device. Continue commenting out lines as directed within get_ip().
 # Add another MAC address variable if using more than 2 devices. For more than 2 devices, additional code must be added within get_ip().
-LIVINGROOM_MAC = "8C:49:62:3C:86:18"
+LIVINGROOM_MAC = "ENTER-YOUR-ROKU-MAC-ADDRESS-FOR-LIVINGROOM"
 
 # DEFAULT AFTER IP ACQUIRED
 def get_command_type():
